@@ -9,7 +9,6 @@ import './posContainer.css'
 
 class PosContainer extends Component {
 
-
     addItemHandler = (name) => {
         this.props.dispatch(addItem(name))
     }
@@ -26,6 +25,7 @@ class PosContainer extends Component {
         return (
             <div className="Content">
                 <Cart cartItems={this.props.cart}/>
+                <p style={{ textAlign: 'center', width: '100%', backgroundColor: '#94b8b8', padding: '10px 0'}}>Items Available</p>
                 {this.props.items.map(item => (
                     <ItemStack
                         key={item.id}
@@ -34,7 +34,7 @@ class PosContainer extends Component {
                         removeCart={() => this.deleteItemHandler(item.id)}
                     />
                 ))}
-                <AddItem personAdded={(name) => this.addItemHandler(name)} />
+                <AddItem itemAdded={(name) => this.addItemHandler(name)} />
             </div>
         );
     }

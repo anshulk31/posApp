@@ -9,7 +9,7 @@ class cart extends Component {
     render() {
         const cartItems = this.props.cartItems.length > 0 ? this.props.cartItems.map(cartItem => {
             return (
-                <div className="Items">
+                <div className="Items" key={cartItem.id}>
                     <div className="CartControl">
                         <div className="Name">{cartItem.name}</div>
                         <button 

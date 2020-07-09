@@ -46,6 +46,11 @@
     text-transform: uppercase;
 }
 
+.Logo {
+    height: 80%;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
