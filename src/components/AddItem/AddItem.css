@@ -1,0 +1,20 @@
+.AddItem {
+    text-align: center;
+    margin: 30px;
+}
+
+.AddItem input {
+	padding: 6px; 
+	width: 20%;
+	box-sizing: border-box;
+}
+
+.AddItem button {
+    font: inherit;
+    padding: 5px;
+    margin: 0 5px;
+    width: 100px;
+    border: 1px solid #AA6817;
+    cursor: pointer;
+    outline: none;
+}

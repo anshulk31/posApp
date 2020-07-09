@@ -1,0 +1,80 @@
+.ItemControls {
+    width: 100%;
+    background-color: #94b8b8;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    box-shadow: 0 2px 1px #ccc;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.ItemControl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.ItemControl button {
+    display: block;
+    font: inherit;
+    padding: 5px;
+    margin: 0 5px;
+    width: 100px;
+    border: 1px solid #AA6817;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.ItemControl button:disabled {
+    background-color: #AC9980;
+    border: 1px solid #7E7365;
+    color: #ccc;
+    cursor: default;
+}
+
+.BuildControl button:hover:disabled {
+    background-color: #AC9980;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.Label {
+    padding: 10px;
+    font-weight: bold;
+    width: 80px;
+}
+
+.ItemControl .Less {  
+    background-color: #FF6666;
+    color: white;
+}
+
+.ItemControl .More {
+    background-color: #3358ff;
+    color: white;
+}
+
+.ItemControl .Less:hover, .ItemControl .Less:active {  
+    background-color: #FF9999;
+    color: white;
+}
+
+.ItemControl .More:hover,.ItemControl .More:active {
+    background-color: #008080;
+    color: white;
+}
+
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

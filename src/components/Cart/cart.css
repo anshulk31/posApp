@@ -1,0 +1,65 @@
+.Cart {
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    text-align: center;
+    font-weight: bold;
+    overflow: auto;
+    font-size: 1.2rem;
+}
+
+
+.CartControl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.CartControl button {
+    display: block;
+    font: inherit;
+    padding: 5px;
+    margin: 0 5px;
+    width: 150px;
+    border: 1px solid #AA6817;
+    cursor: pointer;
+    outline: none;
+}
+
+.Name {
+    padding: 10px;
+    font-weight: bold;
+    width: 80px;
+}
+
+.CartControl .Less {  
+    background-color: #FF6666;
+    color: white;
+}
+
+.CartControl .Less:hover, .CartControl .Less:active {  
+    background-color: #FF9999;
+    color: white;
+}
+
+@media (min-width: 500px) and (min-height: 400px) {
+    .Cart {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 500px) and (min-height: 401px) {
+    .Cart {
+        width: 450px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1000px) and (min-height: 700px) {
+    .Cart {
+        width: 700px;
+        height: 600px;
+    }
+}
